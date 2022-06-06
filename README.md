@@ -10,6 +10,8 @@ Every application built with websocket has it own specific purposes and details.
 
 Depending the logic or domain of the application concept, the message exchange between the client and server may have to be know from all the nodes or just the one who received the **event**.
 
+![Flowchart](docs/flowchart.png)
+
 ## Events
 
 In order to handle the communication between server, client and the cluster environment in easier and flexible way, the concept of Event is a great option to be adopted.
