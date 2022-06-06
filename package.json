@@ -16,7 +16,7 @@
     "uuid": "^8.3.2",
     "websocket": "^1.0.34"
   },
-  "name": "websocket-cluster-server",
+  "name": "websocket-server-cluster",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT"
