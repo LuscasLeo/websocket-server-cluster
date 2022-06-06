@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  server:
+    image: wss
+    deploy:
+      replicas: 3
+    volumes:
+      - ./src:/app/src
+    environment:
+      SERVER_PORT: '3000'
+      REDIS_SERVER: redis://localhost:6379
+
+    ports:
+      - "3000:3000"
+    healthcheck:
+      test: ["CMD", "curl", "http://localhost:3000"]
+      interval: 3s
+      timeout: 30s
+      retries: 5
+      start_period: 30s
+
+
+    
